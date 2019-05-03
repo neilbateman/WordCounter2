@@ -21,10 +21,10 @@ namespace WordCounter.Models
             return _intakeWord;
         }
 
-        public static int GetPairs()
-        {
-            return pairs;
-        }
+        // public static int GetPairs()
+        // {
+        //     return pairs;
+        // }
         public void SetSentence(string setSentence)
         {
             _intakeSentence = setSentence;

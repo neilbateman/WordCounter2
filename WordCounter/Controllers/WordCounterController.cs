@@ -24,7 +24,7 @@ namespace WordCounter.Controllers
     [HttpPost("/wordsentences")]
     public ActionResult Create(string sentence, string word)
     {
-        WordSentence myWordSentence = new WordSentence(word, sentence);
+        RepeatCounter myWordSentence = new RepeatCounter(word, sentence);
         return View("Index", myWordSentence);
 
     }
