@@ -29,7 +29,7 @@ namespace WordCounter.Models
             _intakeWord = setWord;
         }
 
-        public int GetPairs()
+        public int GetPairs() 
         {
             int pairs = 0;
             string[] splitSentence = _intakeSentence.Split();
