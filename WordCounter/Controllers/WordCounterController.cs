@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WordCounter.Models;
 using System.Collections.Generic;
-
+using System;
 namespace WordCounter.Controllers
 {
   public class WordCounterController : Controller
@@ -15,16 +15,16 @@ namespace WordCounter.Controllers
     //   return View(starterItem);
     // }
 
-   [Route("/wordsentences/new")]
+   [HttpGet("/wordsentences/new")]
     public ActionResult CreateForm()
     {
       return View();
     }
     
-    [Route("/wordsentences")]
+    [HttpPost("/wordsentences")]
     public ActionResult Create(string sentence, string word)
     {
-        WordSentence myWordSentence = new WordSentence(sentence, word);
+        WordSentence myWordSentence = new WordSentence(word, sentence);
         return View("Index", myWordSentence);
 
     }
