@@ -25,7 +25,7 @@ namespace WordCounter.Controllers
     public ActionResult Create(string sentence, string word)
     {
         RepeatCounter myWordSentence = new RepeatCounter(word, sentence);
-        return View("Index", myWordSentence);
+        return RedirectToAction("Index");
 
     }
 
