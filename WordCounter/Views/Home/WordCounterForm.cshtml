@@ -3,15 +3,16 @@
   <head>
     <meta charset='utf-8'>
     <title>Word Counter</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Provide a word and phrase</h1>
+    <h1>Provide a word and sentence</h1>
 
-    <form action="/items" method="post">
+    <form action="/wordsentences" method="post">
       <label for="word">Add a new word</label>
       <input id="word" name="word" type="text">
-      <label for="phrase">Add a new phrase</label>
-      <input id="phrase" name="phrase" type="text">
+      <label for="sentence">Add a new sentence</label>
+      <input id="sentence" name="sentence" type="text">
       <button type="submit">Submit</button>
     </form>
 
